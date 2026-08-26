@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Phone } from "@phosphor-icons/react";
+import { Phone, WhatsappLogo } from "@phosphor-icons/react";
 import { Logo } from "./logo";
 
 // Numero de contacto unico del sitio -- un solo cambio aqui se propaga a
-// la cabecera y (via components/site-footer.tsx) al pie de pagina.
+// la cabecera y (via components/site-footer.tsx) al pie de pagina. El
+// mismo numero atiende llamada y WhatsApp.
 const CONTACT_PHONE_HREF = "tel:+34625529758";
+const WHATSAPP_HREF = "https://wa.me/34625529758";
 
 // Pestañas reales de un sitio multi-pagina (cada una es una ruta propia,
 // no un ancla dentro de una unica pagina como en la landing de venta) --
@@ -50,13 +52,24 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <a
-          href={CONTACT_PHONE_HREF}
-          className="flex items-center gap-2 rounded-lg bg-ink-50 px-4 py-2 text-sm font-semibold text-noir-950 hover:bg-white"
-        >
-          <Phone size={16} weight="fill" />
-          Llamar ahora
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={WHATSAPP_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Escríbenos por WhatsApp"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-ink-300 hover:border-brand-400 hover:text-brand-400"
+          >
+            <WhatsappLogo size={18} weight="fill" />
+          </a>
+          <a
+            href={CONTACT_PHONE_HREF}
+            className="flex items-center gap-2 rounded-lg bg-ink-50 px-4 py-2 text-sm font-semibold text-noir-950 hover:bg-white"
+          >
+            <Phone size={16} weight="fill" />
+            Llamar ahora
+          </a>
+        </div>
       </div>
     </header>
   );

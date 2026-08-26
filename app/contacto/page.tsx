@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
-import { InstagramLogo, LinkedinLogo, Phone } from "@phosphor-icons/react/dist/ssr";
+import {
+  InstagramLogo,
+  LinkedinLogo,
+  Phone,
+  WhatsappLogo,
+} from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
   title: "Contacto",
-  description: "Habla con Recepta Technologies por teléfono o redes sociales.",
+  description: "Habla con Recepta Technologies por teléfono, WhatsApp o redes sociales.",
 };
 
 const CONTACT_PHONE_DISPLAY = "+34 625 52 97 58";
 const CONTACT_PHONE_HREF = "tel:+34625529758";
+const WHATSAPP_HREF = "https://wa.me/34625529758";
 
 const SOCIAL_LINKS = [
+  {
+    label: "WhatsApp",
+    href: WHATSAPP_HREF,
+    Icon: WhatsappLogo,
+  },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/company/recepta.vercel.app/?viewAsMember=true",

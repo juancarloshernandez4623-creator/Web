@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CheckCircle, Phone, X } from "@phosphor-icons/react/dist/ssr";
+import { CheckCircle, Phone, WhatsappLogo, X } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
   title: "Precios",
@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 const CONTACT_PHONE_HREF = "tel:+34625529758";
+const WHATSAPP_HREF = "https://wa.me/34625529758";
 
 const PRICING = [
   {
@@ -188,6 +189,15 @@ export default function PreciosPage() {
           >
             <Phone size={18} weight="fill" />
             Hablemos y lo activamos
+          </a>
+          <a
+            href={WHATSAPP_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-white/15 px-6 py-3 font-semibold text-ink-50 hover:border-brand-400 hover:text-brand-400"
+          >
+            <WhatsappLogo size={18} weight="fill" />
+            Escríbenos por WhatsApp
           </a>
         </div>
         <p className="mt-3 text-xs text-ink-500">

@@ -1,11 +1,22 @@
 import Link from "next/link";
-import { InstagramLogo, LinkedinLogo, Phone } from "@phosphor-icons/react/dist/ssr";
+import {
+  InstagramLogo,
+  LinkedinLogo,
+  Phone,
+  WhatsappLogo,
+} from "@phosphor-icons/react/dist/ssr";
 import { LogoMark } from "./logo";
 
 const CONTACT_PHONE_DISPLAY = "+34 625 52 97 58";
 const CONTACT_PHONE_HREF = "tel:+34625529758";
+const WHATSAPP_HREF = "https://wa.me/34625529758";
 
 const SOCIAL_LINKS = [
+  {
+    label: "WhatsApp",
+    href: WHATSAPP_HREF,
+    Icon: WhatsappLogo,
+  },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/company/recepta.vercel.app/?viewAsMember=true",
