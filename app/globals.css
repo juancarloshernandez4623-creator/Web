@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eefdf6;
+  --color-brand-100: #d6f9e7;
+  --color-brand-200: #b0f1d2;
+  --color-brand-300: #7ce4b8;
+  --color-brand-400: #43cf98;
+  --color-brand-500: #1fb37e;
+  --color-brand-600: #148f65;
+  --color-brand-700: #127252;
+  --color-brand-800: #135b43;
+  --color-brand-900: #124b39;
+  --color-brand-950: #062a20;
+
+  /* Mismo dorado que en la landing (web/app/globals.css), tomado del
+     degradado de la cinta del logo -- se mantiene identico a proposito
+     para que ambos sitios se lean como la misma marca aunque sean
+     proyectos de codigo separados. */
+  --color-gold-100: #f8efd9;
+  --color-gold-300: #f1e3ad;
+  --color-gold-500: #d8ba6b;
+  --color-gold-700: #9c792b;
+  --color-gold-900: #6b5017;
+
+  /* Aqui no hay un dashboard interno con tema claro que convivir --
+     todo el sitio es esta paleta oscura, asi que los tokens se aplican
+     directo a :root/body en vez de quedar detras de una clase .marketing
+     como en el proyecto de la landing. */
+  --color-noir-950: #0a0c0a;
+  --color-noir-900: #12140f;
+  --color-ink-50: #f4f2ea;
+  --color-ink-300: #acb3a6;
+  --color-ink-500: #6f766a;
+}
+
+:root {
+  --background: var(--color-noir-950);
+  --foreground: var(--color-ink-50);
+}
+
+body {
+  background-color: var(--color-noir-950);
+  background-image: radial-gradient(
+      60rem 30rem at 15% -10%,
+      color-mix(in srgb, var(--color-gold-500) 14%, transparent),
+      transparent
+    ),
+    radial-gradient(
+      50rem 26rem at 90% 0%,
+      color-mix(in srgb, var(--color-brand-500) 12%, transparent),
+      transparent
+    );
+  background-attachment: fixed;
+  color: var(--color-ink-50);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-mono-brand {
+  font-family: var(--font-mono-brand), "SFMono-Regular", Consolas, monospace;
+}
