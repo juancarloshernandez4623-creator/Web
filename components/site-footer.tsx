@@ -11,8 +11,8 @@ import { LogoMark } from "./logo";
 const CONTACT_PHONE_DISPLAY = "+34 625 52 97 58";
 const CONTACT_PHONE_HREF = "tel:+34625529758";
 const WHATSAPP_HREF = "https://wa.me/34625529758";
-const CONTACT_EMAIL_DISPLAY = "juancarlos@usarecepta.com";
-const CONTACT_EMAIL_HREF = "mailto:juancarlos@usarecepta.com";
+const CONTACT_EMAIL_DISPLAY = "info@usarecepta.com";
+const CONTACT_EMAIL_HREF = "mailto:info@usarecepta.com";
 
 const SOCIAL_LINKS = [
   {
