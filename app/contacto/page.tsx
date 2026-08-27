@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import {
+  EnvelopeSimple,
   InstagramLogo,
   LinkedinLogo,
   Phone,
@@ -8,12 +9,15 @@ import {
 
 export const metadata: Metadata = {
   title: "Contacto",
-  description: "Habla con Recepta Technologies por teléfono, WhatsApp o redes sociales.",
+  description:
+    "Habla con Recepta Technologies por teléfono, WhatsApp, correo o redes sociales.",
 };
 
 const CONTACT_PHONE_DISPLAY = "+34 625 52 97 58";
 const CONTACT_PHONE_HREF = "tel:+34625529758";
 const WHATSAPP_HREF = "https://wa.me/34625529758";
+const CONTACT_EMAIL_DISPLAY = "juancarlos@usarecepta.com";
+const CONTACT_EMAIL_HREF = "mailto:juancarlos@usarecepta.com";
 
 const SOCIAL_LINKS = [
   {
@@ -55,6 +59,14 @@ export default function ContactoPage() {
         >
           <Phone size={28} weight="fill" className="text-brand-400" />
           {CONTACT_PHONE_DISPLAY}
+        </a>
+
+        <a
+          href={CONTACT_EMAIL_HREF}
+          className="flex items-center gap-2 font-medium text-ink-300 hover:text-brand-400"
+        >
+          <EnvelopeSimple size={18} weight="fill" />
+          {CONTACT_EMAIL_DISPLAY}
         </a>
 
         <div className="flex items-center gap-3">

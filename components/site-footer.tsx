@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  EnvelopeSimple,
   InstagramLogo,
   LinkedinLogo,
   Phone,
@@ -10,6 +11,8 @@ import { LogoMark } from "./logo";
 const CONTACT_PHONE_DISPLAY = "+34 625 52 97 58";
 const CONTACT_PHONE_HREF = "tel:+34625529758";
 const WHATSAPP_HREF = "https://wa.me/34625529758";
+const CONTACT_EMAIL_DISPLAY = "juancarlos@usarecepta.com";
+const CONTACT_EMAIL_HREF = "mailto:juancarlos@usarecepta.com";
 
 const SOCIAL_LINKS = [
   {
@@ -69,6 +72,13 @@ export function SiteFooter() {
           >
             <Phone size={16} weight="fill" />
             {CONTACT_PHONE_DISPLAY}
+          </a>
+          <a
+            href={CONTACT_EMAIL_HREF}
+            className="flex items-center gap-2 text-ink-300 hover:text-brand-400 sm:justify-end"
+          >
+            <EnvelopeSimple size={16} weight="fill" />
+            {CONTACT_EMAIL_DISPLAY}
           </a>
           <div className="flex items-center gap-3">
             {SOCIAL_LINKS.map(({ label, href, Icon }) => (
