@@ -201,7 +201,7 @@ export default function PreciosPage() {
           </a>
         </div>
         <p className="mt-3 text-xs text-ink-500">
-          Respuesta el mismo día · configurado en 24 horas
+          Respuesta el mismo día · configurado en 48 horas
         </p>
       </section>
     </main>

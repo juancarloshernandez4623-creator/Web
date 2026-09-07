@@ -127,7 +127,7 @@ export default function HomePage() {
           Cada minuto sin responder, alguien elige a otro negocio.
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-sm text-ink-300">
-          Cuéntanos cómo trabaja tu negocio y en un día tienes el agente
+          Cuéntanos cómo trabaja tu negocio y en 48 horas tienes el agente
           respondiendo por ti en WhatsApp.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

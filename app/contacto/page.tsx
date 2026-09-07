@@ -85,7 +85,7 @@ export default function ContactoPage() {
         </div>
 
         <p className="text-xs text-ink-500">
-          Respuesta el mismo día · configurado en 24 horas
+          Respuesta el mismo día · configurado en 48 horas
         </p>
       </div>
     </main>
