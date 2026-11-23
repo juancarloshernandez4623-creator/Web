@@ -5,6 +5,7 @@ import {
   Phone,
   WhatsappLogo,
 } from "@phosphor-icons/react/dist/ssr";
+import { HeroVideo } from "@/components/hero-video";
 
 const CONTACT_PHONE_HREF = "tel:+34625529758";
 const WHATSAPP_HREF = "https://wa.me/34625529758";
@@ -79,6 +80,8 @@ export default function HomePage() {
             Gratis y sin compromiso · 20 minutos · mismo número para llamada o WhatsApp
           </p>
         </div>
+
+        <HeroVideo />
 
         <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {STATS.map((s) => (
