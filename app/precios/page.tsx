@@ -14,7 +14,7 @@ const PRICING = [
   {
     tag: "Pago único",
     title: "Puesta en marcha",
-    price: "1.500 €",
+    price: "499,99 €",
     cadence: "instalación inicial · IVA incluido",
     billingNote: null as string | null,
     items: [
